@@ -171,7 +171,7 @@ const MovieApp = ({ apiKey, onResetKey }) => {
             <>
               {trendingMovies.length > 0 && !searchTerm && (
                 <section className="trending mt-16">
-                  <h2 className="text-white text-4xl sm:text-5xl font-bold text-center mb-6"> Top 3 Trending Movies 🤩</h2>
+                  <h2 className="text-white text-4xl sm:text-5xl font-bold text-center mb-6"> 🔺 Top 3 Trending Movies 🤩</h2>
                   <ul className="flex flex-row overflow-x-auto gap-6 hide-scrollbar px-2">
                     {trendingMovies.map((movie, index) => (
                       <li key={movie.$id} className="flex flex-col items-center gap-3 min-w-[280px] bg-dark-100 p-4 rounded-xl shadow hover:shadow-xl transition-transform duration-300">
