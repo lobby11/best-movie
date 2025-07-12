@@ -192,3 +192,17 @@
     z-index: 0;
   }
 }
+@layer base {
+  nav h1 {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gradient transition-all duration-300 hover:brightness-125;
+  }
+
+  header nav {
+    @apply flex flex-col sm:flex-row gap-4 sm:gap-0 items-center justify-between;
+  }
+
+  header button span {
+    @apply text-sm sm:text-base px-4 sm:px-9 py-2;
+  }
+}
+
