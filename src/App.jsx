@@ -52,7 +52,7 @@ const Footer = () => {
             <p className="text-light-300 text-sm">Your ultimate partner in discovering the perfect movie.</p>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-white mb-3">Contact Us</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">Contact Us ☏ </h3>
             <ul className="text-light-300 text-sm space-y-2">
               <li><strong>Email:</strong> nitiniiitr@gmail.com</li>
               <li><a href="https://www.linkedin.com/in/nitin-kumar-patwa-a310a9329/">Linkedin Profile</a></li>
@@ -60,7 +60,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="text-xl font-semibold text-white mb-3">Extra Knowledge</h3>
+            <h3 className="text-xl font-semibold text-white mb-3">Extra Knowledge 👀🧠</h3>
             <p className="text-light-300 text-sm">This website uses the TMDB API but is not endorsed or certified by TMDB.</p>
           </div>
         </div>
@@ -171,7 +171,7 @@ const MovieApp = ({ apiKey, onResetKey }) => {
             <>
               {trendingMovies.length > 0 && !searchTerm && (
                 <section className="trending mt-16">
-                  <h2 className="text-white text-4xl sm:text-5xl font-bold text-center mb-6">🔥 Top 3 Trending Movies 🤩</h2>
+                  <h2 className="text-white text-4xl sm:text-5xl font-bold text-center mb-6"> Top 3 Trending Movies 🤩</h2>
                   <ul className="flex flex-row overflow-x-auto gap-6 hide-scrollbar px-2">
                     {trendingMovies.map((movie, index) => (
                       <li key={movie.$id} className="flex flex-col items-center gap-3 min-w-[280px] bg-dark-100 p-4 rounded-xl shadow hover:shadow-xl transition-transform duration-300">
