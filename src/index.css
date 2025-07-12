@@ -35,7 +35,9 @@
   }
 
   header {
-    @apply sm:mt-10 mt-5;
+    top: 0;
+    margin: 0;
+    padding: 0;
   }
 
   header img {
@@ -54,11 +56,9 @@
 
   .trending {
     @apply mt-10 flex flex-col items-center justify-center relative h-[400px];
-    
 
-  
     & ul {
-      @apply relative w-full max-w-3xl mx-auto h-[590px];
+      @apply relative w-full max-w-3xl mx-auto h-[560px];
     }
 
     & ul li {
@@ -78,17 +78,13 @@
       animation-delay: 5s;
     }
 
-    /* & ul li img {
-      @apply w-[220px] h-[320px] object-cover rounded-xl shadow-xl;
-    } */
-
     & ul li p {
       @apply text-gradient text-2xl font-bold mt-7;
     }
   }
 
   .search {
-    @apply w-full bg-light-100/5 px-4 py-3 rounded-xl mt-10 max-w-3xl mx-auto backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300;
+    @apply w-full bg-light-100/5 px-4 py-3 rounded-xl mt-9 max-w-3xl mx-auto backdrop-blur-sm hover:backdrop-blur-md transition-all duration-300;
 
     & div {
       @apply relative flex items-center;
@@ -178,7 +174,21 @@
 }
 
 @keyframes fadeSlide {
-  0% { opacity: 0; transform: scale(0.95); z-index: 0; }
-  10%, 30% { opacity: 1; transform: scale(1); z-index: 10; }
-  40%, 100% { opacity: 0; transform: scale(0.95); z-index: 0; }
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+    z-index: 0;
+  }
+  10%,
+  30% {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+  }
+  40%,
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+    z-index: 0;
+  }
 }
